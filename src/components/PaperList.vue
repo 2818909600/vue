@@ -32,12 +32,6 @@ export default {
     let paperList=ref([])
     return {paperList,id}
   },
-  watch: {
-    data: function(newVal) {
-      this.id = newVal; //这样就能在method使用props
-      console.log('Watch：', this.id)
-    }
-  },
   mounted() {
     this.showPaperList()
   },
